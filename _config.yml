@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you are expected to update. Often. Use more granular
+# settings if you are dealing with this all the time with jekyll-assets such as
+# the available at https://github.com/jekyll/jekyll-assets
+
+title: Hussein Shalaby
+email: husseinhafez.shalaby@gmail.com
+description: >- 
+  My personal website where I post my graphics programming journey.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://husseinhafez1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  husseinhafez1
+linkedin_username: husseinshalaby
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+show_excerpts: true
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing directories or their entries
+# in `include:` if desired. Should rarely need to edit.
+#
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - .idea/
+   - .gitignore
+   - vendor/
