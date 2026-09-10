@@ -10,7 +10,6 @@
 title: Hussein Shalaby
 email: husseinhafez.shalaby@gmail.com
 description: >- 
-  My personal website where I post my graphics programming journey.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://husseinhafez1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  husseinhafez1
