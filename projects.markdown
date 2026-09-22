@@ -70,3 +70,16 @@ Key features:
 **Stack:** Rust
 
 [View on GitHub →](https://github.com/husseinhafez1/rustraster)
+
+<!-- -->
+
+## WebGPU Particle Simulation
+
+A real-time, browser-based particle simulation in TypeScript using Three.js's WebGPU renderer to drive thousands of live particles.
+
+- Interactive mouse-based attraction/repulsion forces and WASD-controlled dynamic gravity, wired through clean event-driven input handling
+- Real-time application state management to keep the simulation smooth and responsive
+
+**Stack:** TypeScript, Three.js, WebGPU
+
+[Try the live demo →](https://particle-shader-three.vercel.app/)
