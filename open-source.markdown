@@ -6,15 +6,13 @@ permalink: /open-source/
 
 A collection of my contributions to open-source projects and tools I build in the open.
 
-## Mesa (Zink)
+## Mesa (zink driver)
 
-[Mesa](https://www.mesa3d.org/) is the open-source implementation of OpenGL and Vulkan drivers on Linux. I contributed to [Zink](https://docs.mesa3d.org/drivers/zink.html), the OpenGL-over-Vulkan driver, by migrating line rasterization code from the `EXT`/`KHR`-suffixed API to the promoted Vulkan 1.4 core names (`VK_EXT_line_rasterization` → `VK_KHR_line_rasterization` → core).
+Mesa is the open-source implementation of OpenGL, Vulkan, and other graphics API specifications, powering GPU drivers across Linux, including AMD, Intel, and virtual/translation drivers like zink (Vulkan-based OpenGL). I contributed to zink, renaming Vulkan API calls and structures from their extension-suffixed names (EXT/KHR) to their promoted, unsuffixed core names following Vulkan 1.4's promotion of VK_EXT_line_rasterization, verifying each rename against Mesa's own extension registry to correctly distinguish promoted symbols from those in a separate, non-promoted extension (VK_EXT_extended_dynamic_state3) that needed to keep their suffix.
 
-This covered `VkLineRasterizationMode`, `VkPhysicalDeviceLineRasterizationFeatures`, `VkPipelineRasterizationLineStateCreateInfo`, the `VK_LINE_RASTERIZATION_MODE_*` modes, `VK_DYNAMIC_STATE_LINE_STIPPLE`, and related structure types, while deliberately leaving `CmdSetLineRasterizationModeEXT` / `CmdSetLineStippleEnableEXT` on their `EXT` names since those come from `VK_EXT_extended_dynamic_state3`.
+**Stack:** C, Vulkan
 
-**Stack:** C, Vulkan, Zink
-
-[View merge request →](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/44612)
+[View MR →](https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/44612)
 
 <!-- -->
 
